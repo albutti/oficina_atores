@@ -8,20 +8,30 @@ nav {
     display: flex;
     flex-direction: row;
     font-size: 30px;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
 }
 nav a {
     text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color:brown;
+    font-weight: bold;
 }
 
 nav ul{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 
 nav ul, nav li {
     list-style: none;
-    margin-left: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 header nav {
@@ -37,7 +47,24 @@ main {
 
 .container {
     width: 1200px;
+    margin-top: 20px;
 }
+
+header  ul li{
+    margin: 5px 0;
+    padding: 0 10px;
+    border-left: solid 1px black;
+}
+
+header  ul li:last-child{
+    /**border-left: none;**/
+    border-right: solid 1px black;
+}
+/**
+header  ul li:first-child{
+    border-left: none;
+}**/
+
 /** Cartaz **/
 
 h4 {
@@ -69,11 +96,24 @@ h4 {
 }
 
 .div_img {
-    background-color: blue;
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
+    display: flex;
+    background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)
+    100%), url(/imagens/mascaras_teatro.PNG);
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
     margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_img:hover {
+    background: linear-gradient(rgba(114, 114, 114, 0.945), rgba(114, 114, 114, 0.945)
+    100%), url(/imagens/mascaras_teatro.PNG);
+    background-position: center;
+    background-size: cover;
 }
 
 /** drt **/
